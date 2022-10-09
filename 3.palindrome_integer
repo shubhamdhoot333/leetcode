@@ -1,0 +1,32 @@
+//Given an integer x, return true if x is palindrome integer.An integer is a palindrome when it reads the same backward as forward. 
+//this program work on less then 0 equal to 0 or greater then 0 also .
+var isPalindrome = function(x) {
+    var rev_num = 0;
+    var num=x;
+   if(x==0)
+       {
+            return true;
+       }
+    if(x>0)
+        {
+            while(x>0)
+                {
+                  rev_num = rev_num * 10 + x % 10;
+                  x = Math.floor(x / 10);
+                }
+          
+        }
+    else
+        {
+            return false;
+        }
+    if(rev_num===num)
+        {
+            return true;
+        }
+    else
+        {
+            return false;
+        }
+    
+};
