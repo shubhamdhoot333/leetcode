@@ -1,0 +1,15 @@
+var countNegatives = function(grid) {
+    var m=grid.length,n,sum=0;
+   for(var i =0 ;i<m;i++)
+       {
+           for(var j=0;j<grid[i].length;j++)
+               {
+                   if(grid[i][j]<0)
+                       {
+                           sum++;
+                       }
+               }
+       }
+    return sum;
+    
+};
