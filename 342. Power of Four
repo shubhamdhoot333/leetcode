@@ -1,0 +1,23 @@
+//it check num is power of 4 starting 0 to till range 
+
+var isPowerOfFour = function(n) {
+    var count=0
+    var m=n
+    if(n==1)
+    {
+        return true;
+    }
+   while(n>0)
+   {
+     n=Math.floor(n/4);
+    count++;   
+   }
+      if(m==Math.pow(4,count-1))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+};
