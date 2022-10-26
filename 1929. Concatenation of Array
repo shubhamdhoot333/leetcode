@@ -1,0 +1,19 @@
+var getConcatenation = function(nums) {
+    var num1=[];
+    var len=nums.length-1;
+    num1=nums;
+    for(var i=0;i<nums.length;i++)
+    {
+        if(i>len)
+        {
+            break;
+        }
+        else
+        {
+      num1.push(nums[i])
+        console.log(num1)        
+        }
+    
+    }
+    return num1
+};
