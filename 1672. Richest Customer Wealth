@@ -1,0 +1,24 @@
+var maximumWealth = function(accounts) {
+    var arr=[],max=0;
+   for(var i=0;i<accounts.length;i++)
+   {
+       var sum=0
+       for(var j=0;j<accounts[i].length;j++)
+       {
+           sum=sum+accounts[i][j];
+           
+       }
+       arr.push(sum);
+     
+   }
+     for(var k=0;k<arr.length;k++)
+       {
+           if(max<arr[k])
+           {
+               max=arr[k];
+           }
+       }
+       return max;
+
+    
+};
