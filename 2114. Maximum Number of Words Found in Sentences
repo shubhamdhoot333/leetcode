@@ -1,0 +1,15 @@
+var mostWordsFound = function(sentences) {
+  var max=0,size=0;
+  for(var i=0;i<sentences.length;i++)
+  {
+      console.log( sentences[i] )
+       size=sentences[i].split(' ')
+       .filter(function(n)
+       {return n != '' }).length;
+       if(size>max)
+       {
+           max=size;
+       }
+  }
+  return max;
+};
