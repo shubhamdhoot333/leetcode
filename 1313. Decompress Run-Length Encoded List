@@ -1,0 +1,16 @@
+var decompressRLElist = function(nums) {
+    var arr=[];
+    for(var i=0;i<nums.length;i=i+2)
+   {
+       
+        var num=nums[i]
+        while(num)
+            {
+        arr.push(nums[i+1]);
+            num--;
+            }
+  
+       
+   }
+   return arr;
+};
