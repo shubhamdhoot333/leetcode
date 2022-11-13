@@ -1,0 +1,22 @@
+ var interpret = function(command) {
+     var str=[]
+    for(var i=0;i<command.length;i++)
+    {
+        if(command[i]=="G")
+        {
+            str.push(command[i]);
+        }
+        else if(command[i]=="(" && command[i+1]==")")
+        {
+            str.push("o");
+            
+        }
+        else if(command[i]=="(" && command[i+1]=="a")
+        {
+          str.push("al");   
+        }
+        var str1=str.join('');
+    
+    }
+    return str1;
+};
