@@ -1,0 +1,18 @@
+var restoreString = function(s, indices) {
+  var value=[]
+   var str=s.split('');
+  
+    for(var i=0;i<indices.length;i++)
+    {
+        for(var j=0;j<indices.length;j++)
+        {
+            if(i==indices[j])
+            {
+                value.push(str[j])
+
+            }
+        }
+    }
+    var val1=value.join('');
+    return val1;
+};
