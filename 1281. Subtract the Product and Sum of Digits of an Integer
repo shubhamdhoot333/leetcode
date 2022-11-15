@@ -1,0 +1,13 @@
+var subtractProductAndSum = function(n) {
+    var arr=[],pro=1;sum=0,total=0;
+    arr=String(n).split("");
+    for(var i=0;i<arr.length;i++)
+    {
+        pro=(arr[i])*1*pro
+        
+        sum=(arr[i])*1+sum;
+        console.log(pro,sum)
+    }
+    return total=pro-sum;
+    
+};
