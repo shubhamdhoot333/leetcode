@@ -1,0 +1,33 @@
+
+var numberOfMatches = function(n) {
+    var result=0,arr=[],sum=0;
+    while(n>0)
+    {
+       if(n%2==0)
+        {
+           result=n/2;
+           arr.push(result);
+           n=n-result;
+          
+        }
+        else
+        {
+            if(n==1)
+            {
+            
+                break;
+            }
+            
+         result=(n - 1) / 2 
+         arr.push(result);
+         n=n-result;
+      
+            
+        }
+    }
+    for(var j=0;j<arr.length;j++)
+    {
+        sum=arr[j]+sum;
+    }
+    return sum;
+};
