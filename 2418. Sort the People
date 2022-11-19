@@ -1,0 +1,19 @@
+var sortPeople = function(names, heights) {
+    for(var i=0;i<heights.length;i++)
+    {
+        for(var j=i;j<heights.length;j++)
+        {
+            if(heights[i]<heights[j])
+            {
+                var temp=heights[i];
+                heights[i]=heights[j];
+                heights[j]=temp;
+                var temp=names[i];
+                names[i]=names[j];
+                names[j]=temp;
+               
+            }
+        }
+    }
+    return names;
+};
