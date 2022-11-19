@@ -1,0 +1,86 @@
+var squareIsWhite = function(coordinates) {
+    var arr=coordinates.split("")
+    console.log(arr);
+        if(arr[0]=='a')
+        {
+            if(arr[1]%2==0){
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        if(arr[0]=='b')
+        {
+              if(arr[1]%2==0){
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        if(arr[0]=='c')
+           {
+            if(arr[1]%2==0){
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        if(arr[0]=='d')
+        {
+              if(arr[1]%2==0){
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        if(arr[0]=='e')
+           {
+            if(arr[1]%2==0){
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        if(arr[0]=='f')
+         {
+              if(arr[1]%2==0){
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        if(arr[0]=='g')
+           {
+            if(arr[1]%2==0){
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        if(arr[0]=='h')
+         {
+              if(arr[1]%2==0){
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        
+        
+};
