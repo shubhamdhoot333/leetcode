@@ -1,0 +1,24 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+var getDecimalValue = function(head) {
+        var arr=[],l=head.length-1;
+        for(var i=0;i<=l;i++)
+      {
+          if(head[i]==1)
+          {
+          arr[i]=Math.pow(2,l-i)    
+          }
+          else{
+              arr[i]=0
+          }
+          
+      }
+    
+        var sum=0;
+        for(var i=0;i<arr.length;i++)
+        {
+            sum=arr[i]+sum;
+        }
+return sum;
+};
+console.log(getDecimalValue([1,0,1]));
