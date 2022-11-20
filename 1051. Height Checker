@@ -1,0 +1,26 @@
+var heightChecker = function(heights) {
+    var arr=[],count=0;
+    arr=[...heights]
+  
+    for(var i=0;i<heights.length;i++)
+    {
+        for(var j=0;j<heights.length;j++)
+        {
+          if(arr[i]<arr[j])
+          {
+              var temp = arr[i];
+              arr[i]=arr[j];
+              arr[j]=temp;
+          }
+        }
+    }
+    console.log(heights,arr);
+   for(var i=0;i<heights.length;i++)
+    {
+       if(heights[i]!==arr[i])
+       {
+           count++;
+       }
+    }
+    return count;
+};
