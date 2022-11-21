@@ -1,0 +1,23 @@
+var decode = function(encoded, first) {
+    var result =0,arr=[];
+    
+    for(var i=0;i<encoded.length;i++)
+    {
+        if(i==0)
+        {
+         arr.push(first);
+        result=first^encoded[i]
+        arr.push(result);
+        }
+        else
+        {
+            result=result^encoded[i]
+            arr.push(result);
+            
+        }
+        
+        
+        }
+        return arr;
+    
+};
