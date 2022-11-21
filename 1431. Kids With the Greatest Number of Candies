@@ -1,0 +1,26 @@
+
+var kidsWithCandies = function(candies, extraCandies) {
+    var arr=[],max=0
+    for(var i=0;i<candies.length;i++)
+    {
+        if(max<candies[i])
+        {
+            max=candies[i];
+        }
+    }
+    
+   for(var i=0;i<candies.length;i++){
+          if(candies[i]+ extraCandies>=max)
+          {
+              arr.push(true);
+          }
+          else
+          {
+              arr.push(false);
+          }
+     
+  }
+  return arr;
+    
+    
+};
