@@ -1,0 +1,18 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+var percentageLetter = function(s, letter) {
+    var arr=[];
+    var count=0;
+    arr=s.split('');
+   
+    for(var i=0;i<arr.length;i++)
+    {
+        if(letter==arr[i])
+        {
+            count++;
+        }
+    }
+ var result=Math.floor((count/s.length)*100);
+ return result.toFixed(0) ;
+};
+console.log( percentageLetter( "sgawtb","s"));
