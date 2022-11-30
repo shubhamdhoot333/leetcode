@@ -1,0 +1,22 @@
+var generateTheString = function(n) {
+    var arr=[];
+        if(n%2==0)
+        {
+            for(var j=0;j<n-1;j++)
+            {
+                arr.push("a");
+            }
+            arr.push("b");
+        }
+        else
+        {
+             for(var j=0;j<n;j++)
+            {
+                arr.push("a");
+            }
+            
+        }
+    
+    return arr.join('')
+    
+};
