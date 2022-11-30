@@ -1,0 +1,15 @@
+var prefixCount = function(words, pref) {
+    var len=pref.length;
+    var count=0;
+
+    for(var i=0;i<words.length;i++)
+    {
+        var data=words[i].substr(0, len);
+        // console.log(data);
+        if(data==pref)
+        {
+            count++;
+        }
+    }
+    return count;
+};
