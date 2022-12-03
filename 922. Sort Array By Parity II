@@ -1,0 +1,29 @@
+var sortArrayByParityII = function(nums) {
+    var even=[],odd=[],mix=[]
+    for(var i=0;i<nums.length;i++)
+    {
+        if(nums[i]%2==0)
+        {
+            even.push(nums[i])
+        }
+        else
+        {
+            odd.push(nums[i])
+        }
+        
+    }
+    for(var i=0;i<nums.length;i++)
+    {
+        if(i%2==0)
+        {
+            mix.push(even[even.length-1]);
+            even.pop();
+        }
+        else
+        {
+            mix.push(odd[odd.length-1]);
+            odd.pop();
+        }
+    }
+    return mix
+};
