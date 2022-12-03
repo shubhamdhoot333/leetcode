@@ -1,0 +1,16 @@
+var maxProduct = function(nums) {
+    for(var i=0;i<nums.length;i++)
+    {
+        for(var j=i;j<nums.length;j++)
+        {
+            if(nums[i]>nums[j])
+            {
+                var temp=nums[i];
+                nums[i]=nums[j];
+                nums[j]=temp;
+            }
+        }
+    }
+    return (nums[nums.length-1]-1)*(nums[nums.length-2]-1)
+    
+};
