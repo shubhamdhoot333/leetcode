@@ -1,0 +1,35 @@
+/**
+ * @param {string} s
+ * @return {string}
+ */
+var sortSentence = function(s) {
+ let arr=[],arr1=[],arr2=[];
+ arr=s.split(" ")
+
+ for(let i=0;i<arr.length;i++)
+ {
+     var temp=arr[i].split("");
+     arr1.push(temp[temp.length-1]);
+     temp.pop() 
+      arr2.push(temp.join(""))
+ }
+
+ for(var i=1;i<=arr1.length;i++)
+{
+    for(var j=0;j<=arr1.length;j++)
+    {
+        if(arr1[i]>arr1[j])
+        {
+        var demo=arr1[i];
+        arr1[i]=arr1[j];
+        arr1[j]=demo;
+        var demo1=arr2[i];
+          arr2[i]=arr2[j];
+        arr2[j]=demo1;
+        
+        }
+    }
+}
+return arr2.reverse().join(" ")
+
+};
