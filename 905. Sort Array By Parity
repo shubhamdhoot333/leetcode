@@ -1,0 +1,29 @@
+var sortArrayByParity = function(nums) {
+    var arr=[],arr1=[];
+    for(var i=0;i<nums.length;i++)
+    {
+        if(nums[i]%2==0)
+        {
+            arr.push(nums[i]);
+        }
+        else
+        {
+            arr1.push(nums[i]);
+        }
+    }
+     for(var i=0;i<arr.length;i++)
+    {
+     for(var j=i;j<arr.length;j++)
+    {
+        if(arr[i]>arr[j])
+        {
+            var temp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
+        }
+    }
+        
+    }
+    return arr.concat(arr1);
+    
+};
