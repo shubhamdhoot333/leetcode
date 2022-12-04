@@ -1,0 +1,45 @@
+var findLucky = function(arr) {
+    var nums=[];
+    for(var i=0;i<arr.length;i++)
+    {
+        var count=0;
+        for(var j=0;j<arr.length;j++)
+        {
+            
+            if(arr[i]==arr[j])
+            {
+                count++
+            }
+        }
+        if(arr[i]==count)
+        {
+            if(!nums.includes(arr[i]))
+            {
+            nums.push(arr[i]);    
+            }
+            
+        }
+    }
+    if(nums.length>0)
+    {
+    for(var i=0;i<nums.length;i++)
+    {
+        for(var j=0;j<nums.length;j++)
+        {
+            if(nums[i]>nums[j])
+            {
+                var temp=nums[i];
+                nums[i]=nums[j];
+                nums[j]=temp;
+            }
+        }
+    }
+    nums.reverse()
+    return nums[nums.length-1]    
+    }
+    else
+    {
+        return -1
+    }
+    
+};
