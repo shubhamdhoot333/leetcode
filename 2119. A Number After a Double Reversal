@@ -1,0 +1,28 @@
+var isSameAfterReversals = function(num) {
+var r,sum=0,sum1=0;
+    temp=num
+     while(num>0)
+     {
+         r=num%10;    
+        sum=(sum*10)+r;    
+        num=Math.floor(num/10);   
+     }
+    //  console.log(sum)
+     num=sum;
+      while(num>0)
+     {
+         r=num%10;    
+        sum1=(sum1*10)+r;    
+       num=Math.floor(num/10);   
+     }
+    // console.log(sum1)
+     if(temp==sum1)
+     {
+         return true
+     }
+     else
+     {
+         return false
+     }
+     
+};
