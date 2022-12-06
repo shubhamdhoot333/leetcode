@@ -1,0 +1,15 @@
+var firstPalindrome = function(words) {
+    for(var i=0;i<words.length;i++)
+    {
+       
+    var data = words[i].split("").reverse().join("");
+   
+    if(data==words[i])
+    {
+        
+        return words[i];
+    }
+    }
+    return ""
+};
+console.log(firstPalindrome(["notapalindrome","racecar"]));
