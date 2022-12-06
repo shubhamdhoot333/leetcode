@@ -1,0 +1,40 @@
+var diagonalSum = function(mat) {
+    var sum=0,sum1=0;
+    if(mat.length%2==0)
+    {
+     for(var i=0;i<mat.length;i++)
+     {
+         for(var j=0;j<mat[i].length;j++)
+         {
+             if(i==j)
+             {
+                 sum=mat[i][j]+sum;
+             }
+             if((i + j) == (mat[i].length - 1))
+             {
+                 sum1=mat[i][j]+sum1;
+             }
+         }
+     }
+     return sum+sum1;
+    }
+    else
+    {
+         for(var i=0;i<mat.length;i++)
+     {
+         for(var j=0;j<mat[i].length;j++)
+         {
+             if(i==j)
+             {
+                 sum=mat[i][j]+sum;
+             }
+             if((i + j) == (mat[i].length - 1))
+             {
+                 sum1=mat[i][j]+sum1;
+             }
+         }
+     }
+     return sum+sum1-mat[(mat.length-1)/2][(mat.length-1)/2];
+    }
+    
+};
