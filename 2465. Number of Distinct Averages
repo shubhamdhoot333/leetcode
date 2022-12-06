@@ -1,0 +1,39 @@
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var distinctAverages = function(nums) {
+    var arr=[]
+    while(nums.length>0)
+    {
+   for(var i=0;i<nums.length;i++)
+     {
+      for(var j=0;j<nums.length;j++)
+      {
+          if(nums[i]>nums[j])
+          {
+              var temp=nums[i];
+              nums[i]=nums[j];
+              nums[j]=temp;
+          }
+      }
+  }
+ 
+  var min=nums[0];
+  var max=nums[nums.length-1];
+ 
+  if(!arr.includes((min+max)/2))
+  {
+    arr.push((min+max)/2)
+   
+
+  }
+  nums.splice(nums.length-1, 1);
+  nums.splice(0, 1);
+  
+        
+    }
+  
+   return arr.length; 
+    
+};
