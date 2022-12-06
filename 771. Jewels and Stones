@@ -1,0 +1,14 @@
+var numJewelsInStones = function(jewels, stones) {
+    var num=[];
+    var data=jewels.split("")
+  
+    var data1 =stones.split("")
+         data1.map((value,i)=>{
+            if(data.includes(value))
+            {
+                    num.push(value)
+            }
+        })
+      
+  return num.length;
+};
